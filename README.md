@@ -16,8 +16,15 @@ npm i fileservice
 import { FileService } from 'fileservice';
 
 constructor(private fileService: FileService) { 
-    this.downloadFiles= fileService.downloadFile;
-    this.downloadFiles(['http://file.xls', 'http://file.pdf']); 
+    // To Download PDF and Xl Files  
+    this.fileService.downloadFiles(['http://file.xls', 'http://file.pdf']);
+
+    // To Download Image Files  
+    this.fileService.downloadImageFiles(['http://image.jpg', 'http://image.png']);
+
+    // To Download PDF Files  
+    this.fileService.downloadPdfFiles(['http://files0.jpg', 'http://files.pdf']);
+
 }
 
 ```
