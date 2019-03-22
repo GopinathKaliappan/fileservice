@@ -17,7 +17,7 @@ import { FileService } from 'fileservice';
 
 constructor(private fileService: FileService) { 
     // To Download PDF and Xl Files  
-    this.fileService.downloadFiles(['http://file.xls', 'http://file.pdf']);
+    this.fileService.downloadFile(['http://file.xls', 'http://file.pdf']);
 
     // To Download Image Files  
     this.fileService.downloadImageFiles(['http://image.jpg', 'http://image.png']);
